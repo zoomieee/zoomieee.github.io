@@ -2,85 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects | Your Name</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 1rem;
-      background: linear-gradient(to right,  #fcbbbb, #009df8);
-      color: #222;
-    }
-    nav { margin-bottom: 1.5rem; }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #003366;
-    }
-    h1 { font-size: 1.8rem; }
-    h2 { margin-top: 2rem; border-bottom: 1px solid #000000; }
-    p { line-height: 1.5; }
-    .gif { max-width: 30px;}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Praneeth Tadepalli</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="cc.html">Coursework</a>
-    <a href="projects.html">Projects</a>
-    <a href="research.html">Research</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="site-shell">
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">project portfolio</p>
+        <h1 class="site-title">Projects</h1>
+        <p class="site-description">A collection of circuit, processor, and hardware systems work spanning analog ICs, RF and mixed-signal systems, and physical design.</p>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cc.html">Coursework</a>
+        <a href="projects.html">Projects</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <h1>Projects <img src="krusty-the-clown.webp" alt="GIF" class="gif"></h1>
-  <h2>Low-Power Wide Swing Cascode OTA with Switched-Capacitor Biquad Filter for ECG Signal Amplification</h2>
-    <li>Designed a Differential Wide Swing Cascode OTA using CMOS 50 nm technology, focusing on low power and
-compact area with a gain of 51.1 dB and Unity Gain Frequency of 128.8 MHz</li>
-  <li>Validated the performance across PVT variations with an FOM ranging from 1175 to 1380</li>
-  <li>Developed a high Q switched-capacitor biquad filter for low-frequency ECG signal filtering and amplification with
-a Q factor of 1.037</li>
-<h2>Markov Chain Monte Carlo (MCMC) Processor with Knuth–Yao Discrete Sampler</h2>
-  <li>Designed a Verilog-based Knuth–Yao discrete sampler core utilizing an LFSR-based random number generator
-(RNG) for probabilistic sampling in MCMC processors</li>
-  <li>Implemented and verified the RTL architecture using Synopsys Design Compiler and VCS, with focus on timing,
-area, and power optimization</li>
-  <li>Completed RTL-to-GDSII flow including synthesis, floor-planning, placement & routing, and sign-off analysis</li>
-  <h2>8-bit Threshold Leaky ReLU (TLReLU)</h2>
-  <li>Designed an 8-bit TLReLU circuit in TSMC 16 nm CMOS technology using a carry-select adder architecture to
-minimize the critical path delay</li>
-  <li>he optimized design results in a total transistor count of 1098 and a propogation delay of 120 ps</li>
-  <h2>Neuromorphic and synapse circuits using Cadence Virtuoso</h2>
-  
-  <li> Learnt and simulated Neuron circuits like Axon Hillock, Voltage Amplifier Integrate and Fire,
- Low Power Integrate Fire and Adaptive exponential integrate-and-fire models.</li>
-   <li> Worked on Analog Implementation of Synaptic Plasticity/learning rules with circuits like Pair
-    and Triplet based Spike Timing Dependent Plasticity.</li>
-   <li> Worked on different memristor models along with Pair and Triplet based Spike Timing
-    Dependent Plasticity using Time Division Multiplexing.</li>
-   <li>  Worked on a BCM - Based ECG Signal Classifier application via Triplet based Spike Timing
- Dependent Plasticity with memristor circuit.</li>
+    <main class="page-content">
+      <section class="section">
+        <div class="card-grid">
+          <article class="card project-card">
+            <h3>Low-Power Wide Swing Cascode OTA</h3>
+            <ul>
+              <li>Designed a differential wide swing cascode OTA in CMOS 50 nm technology.</li>
+              <li>Targeted low power and compact area while delivering 51.1 dB gain and 128.8 MHz UGF.</li>
+              <li>Validated across PVT corners with FOMs between 1175 and 1380.</li>
+            </ul>
+          </article>
+          <article class="card project-card">
+            <h3>Switched-Capacitor Biquad Filter for ECG</h3>
+            <ul>
+              <li>Implemented a high-Q (Q factor of 1.037) switched-capacitor biquad filter for low-frequency ECG amplification.</li>
+              <li>Designed the filter for reliable amplitude and frequency response in biomedical systems.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-   <h2>Charging circuit for Raspberry Pi 4 present in An Energy Efficient Fog-Based IoT Framework to
-    Combat Wildlife Poaching</h2>
-    <li> Designed a reliable charging circuit for a Raspberry Pi 4 with solar panel, battery pack, solar
-        charge controller, voltage step up regulator , USB-C breakout board and for safety of this
-        circuit capacitor, poly-fuse and a switch.</li>
+      <section class="section">
+        <div class="card-grid">
+          <article class="card project-card">
+            <h3>MCMC Processor with Knuth–Yao Sampler</h3>
+            <ul>
+              <li>Developed a Verilog Knuth–Yao discrete sampler core using an LFSR-based RNG.</li>
+              <li>Verified timing, area, and power using Synopsys Design Compiler and VCS.</li>
+              <li>Completed the RTL-to-GDSII flow with placement, routing, and sign-off.</li>
+            </ul>
+          </article>
+          <article class="card project-card">
+            <h3>8-bit Threshold Leaky ReLU Circuit</h3>
+            <ul>
+              <li>Designed an 8-bit TLReLU circuit in TSMC 16 nm CMOS using a carry-select adder architecture.</li>
+              <li>Achieved a total transistor count of 1098 and a propagation delay of 120 ps.</li>
+            </ul>
+          </article>
+          <article class="card project-card">
+            <h3>2.4 GHz RF Front-End (LNA + 4-Path Mixer)</h3>
+            <ul>
+              <li>Designed a common-source inductive degeneration LNA in TSMC 16 nm achieving 18 dB power gain, 1.1 dB noise figure, and 1 mW power at 2.4 GHz (802.11g).</li>
+              <li>Achieved simultaneous noise and input matching via source degeneration and gate matching network optimization (S11).</li>
+              <li>Implemented a 4-path passive mixer with non-overlapping LO phases for low-loss downconversion and harmonic rejection.</li>
+              <li>Validated performance using AC, transient, and noise simulations; evaluated gain, NF, and frequency response.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-        <h2> Assisted for segmentation of bacterial colonies in petri dish environment using python</h2>
-        <li>Implemented a segmentation algorithm that combined Watershed and Fuzzy C-Means
-            approaches to precisely identify bacterial colonies in a Petri dish setting.</li> 
-          <li> Incorporated the Watershed algorithm for fine-grained segmentation after using Fuzzy C
-           Means for initial clustering to account for inherent ambiguity. </li>
-    <h2>Laser turret using arduino controlled via joystick</h2>
-    <li>Designed a laser turret system with servo motors, an Arduino, and a joystick for accurate
-        control and targeting.</li> 
-    <li>   Facilitated the combination of software and hardware to improve security protocols,
-        exhibiting expertise in creative problem-solving in a cross-functional environment.</li>       
-    <h2> Hardware Implementation of Universal Active Filter</h2>
-    <li> Built Universal Active Filter with LM 741 IC (OPAMP) that can give Low Pass, High Pass and
-        Band Reject Pass responses in the same circuit.</li>    
+      <section class="section">
+        <div class="card-grid">
+          <article class="card project-card">
+            <h3>Neuromorphic & Synapse Circuits</h3>
+            <ul>
+              <li>Designed integrate-and-fire, axon hillock, and adaptive exponential neuron circuits.</li>
+              <li>Implemented pair-based and triplet-based STDP synapse circuits in Cadence Virtuoso.</li>
+              <li>Explored memristor-assisted learning using TDM for compact synaptic implementations.</li>
+            </ul>
+          </article>
+          <article class="card project-card">
+            <h3>BCM-Based ECG Classifier</h3>
+            <ul>
+              <li>Applied triplet STDP and memristor models to develop an ECG classification demonstration.</li>
+              <li>Combined hardware-aware plasticity rules and analog circuit modeling.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card-grid">
+          <article class="card project-card">
+            <h3>Charging Circuit for Raspberry Pi 4</h3>
+            <ul>
+              <li>Designed a solar-assisted charging circuit with a battery charger, USB-C boost regulator, and safety components.</li>
+              <li>Focused on reliability, power flow control, and protection in a fog-based IoT deployment.</li>
+            </ul>
+          </article>
+          <article class="card project-card">
+            <h3>Embedded hardware and image segmentation</h3>
+            <ul>
+              <li>Built a joystick-controlled Arduino laser turret with servo actuation and interactive control.</li>
+              <li>Implemented bacterial colony segmentation using Watershed and Fuzzy C-Means algorithms in Python.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card-grid">
+          <article class="card project-card">
+            <h3>TSMC 16 nm FinFET Inverter Layout</h3>
+            <ul>
+              <li>Completed full inverter layout in TSMC 16 nm FinFET technology with LVS and DRC clean signoff.</li>
+              <li>Extended the design to a 3×3 inverter grid for DRC verification under dense layout conditions.</li>
+              <li>Ensured the full grid remained LVS and DRC clean across the technology library rules.</li>
+            </ul>
+          </article>
+          <article class="card project-card">
+            <h3>TSMC 16 nm FinFET 3-Input NAND Layout</h3>
+            <ul>
+              <li>Completed full 3-input NAND gate layout in TSMC 16 nm FinFET technology with LVS and DRC clean signoff.</li>
+              <li>Implemented diffusion sharing in the NMOS series network and optimized PMOS parallel placement to minimize area and parasitic capacitances.</li>
+              <li>Applied FinFET layout constraints including fin quantization, poly dummy insertion, and well/tap structures in accordance with technology design rules.</li>
+              <li>Verified the layout through LVS and DRC, achieving a clean signoff across the TSMC 16 nm technology rule deck.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <article class="card project-card">
+          <h3>Universal Active Filter</h3>
+          <p>Constructed a universal active filter using an LM741 op-amp, capable of low-pass, high-pass, and band-reject responses in a single analog circuit.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      “A great analog design hides its complexity in a calm waveform.” — Behzad Razavi
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
-

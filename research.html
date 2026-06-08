@@ -2,50 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Research | Your Name</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 1rem;
-      background: linear-gradient(to right,  #fcbbbb, #009df8);
-      color: #222;
-    }
-    nav { margin-bottom: 1.5rem; }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #003366;
-    }
-    h1 { font-size: 1.8rem; }
-    h2 { margin-top: 2rem; border-bottom: 1px solid #000000; }
-    p { line-height: 1.5; }
-    .header { display: flex; align-items: center; gap: 1rem; }
-    .gif1 { max-width: 30px;}
-    .gif2 { max-width: 200px;}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Praneeth Tadepalli</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="cc.html">Coursework</a>
-    <a href="projects.html">Projects</a>
-    <a href="research.html">Research</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="header">
-    <div>
-  <h2>Research Interests <img src="angry-cat.gif" alt="GIF" class="gif1"></h2>
-  <li>Analog Circuits</li>
-  <li>RF Circuits</li>
-  <li>Wired/Wireless Circuits for Communication</li>
-  <li>Neuromorpchic Circuits</li>
-  <li>Quantum Computing</li>
-</div>
- 
-</div>
-  
+  <div class="site-shell">
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">research interests</p>
+        <h1 class="site-title">Research</h1>
+        <p class="site-description">Exploring analog circuits, RF circuit design, mixed-signal systems, and the intersection of practical hardware with efficient CMOS flows.</p>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cc.html">Coursework</a>
+        <a href="projects.html">Projects</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="section">
+        <article class="card">
+          <h2 class="section-title">Core interests</h2>
+          <ul class="interest-list">
+            <li>Analog circuit design</li>
+            <li>RF circuit design</li>
+            <li>Communication systems</li>
+            <li>Mixed-signal circuit design</li> 
+            <li>Physical design</li>
+            <li>Quantum computing</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <article class="card">
+          <h3>Why this matters</h3>
+          <p>Analog, RF, and mixed-signal design are central to future energy-efficient computing. I explore how silicon-based circuits can implement efficient hardware while remaining practical for real systems.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      “Analog is the bridge between theory and reality, written in currents and chirps.” — Jim Williams
+    </footer>
+
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>

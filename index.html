@@ -2,52 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home | Your Praneeth Tadepalli</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 1rem;
-      background: linear-gradient(to right, #fcbbbb, #009df8);
-      color: #222;
-    }
-    nav { margin-bottom: 1.5rem; }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #003366;
-    }
-    h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
-    p { line-height: 1.5; }
-    .header { display: flex; align-items: center; gap: 1rem; }
-    .gif1 { max-width: 300px;}
-    .gif2 { max-width: 30px;}
-    img.profile { max-width: 150px; margin: 1rem 0; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Praneeth Tadepalli</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="cc.html">Coursework</a>
-    <a href="projects.html">Projects</a>
-    <a href="research.html">Research</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="site-shell">
+    <header class="site-header">
+      <div>
+        <h1 class="site-title">Praneeth Tadepalli</h1>
+        </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cc.html">Coursework</a>
+        <a href="projects.html">Projects</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <div class="header">
-    <div>
-      <h1>Praneeth Tadepalli <img src="ragey-cat.webp" alt="GIF" class="gif2"></h1>
-      <img src="cave.png" alt="Your Photo" class="profile">
-      <p>Raised by a pack of wild MOSFETs in a forgotten cave beneath the silicon mountains [see the picture], I learned to read from dusty SPICE manuals and communicate through carefully modulated voltage swings. My lullabies were the hum of amplifiers, and my bedtime stories involved the tragic lives of plasticities.
-        Destiny called early — not with fame or fortune, but with the irresistible lure of neurons, spikes and synaptic weights. Now, I roam the realm of analog circuits and neuromorphic dreams, trying to trick circuits into thinking like brains.
-        Some say I'm just a student. The MOSFETs know better.</p>
-      <p><a href="about.html">You want me to beleive all that!?</a></p>
-    </div>
-    <img src="gintoki-trollface.gif" alt="GIF" class="gif1">
+    <main class="page-content">
+      <section class="section">
+        <div class="card-grid">
+          <article class="card">
+            <h3>Current focus</h3>
+            <p>Designing energy-efficient analog, RF, mixed-signal, and physical-design oriented circuits with strong ties to practical IC flows. I work on analog amplifiers, OTA filters, physical design flows, and low-power mixed-signal systems.</p>
+          </article>
+          <article class="card">
+            <h3>Background</h3>
+            <p>B.Tech in Electronics and Communication Engineering from IIITDM Kancheepuram, now pursuing an M.S. in Electrical and Computer Engineering at the University of Minnesota, Twin Cities.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Featured work</h2>
+        <div class="card-grid">
+          <article class="card project-card">
+            <h4>Low-Power Wide Swing Cascode OTA</h4>
+            <ul>
+              <li>Designed a differential wide swing cascode OTA in CMOS 50 nm technology.</li>
+              <li>Targeted low power and compact area while delivering 51.1 dB gain and 128.8 MHz UGF.</li>
+              <li>Validated across PVT corners with FOMs between 1175 and 1380.</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h4>Switched-Capacitor Biquad Filter for ECG</h4>
+            <ul>
+              <li>Implemented a high-Q (Q factor of 1.037) switched-capacitor biquad filter for low-frequency ECG amplification.</li>
+              <li>Designed the filter for reliable amplitude and frequency response in biomedical systems.</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h4>MCMC Processor with Knuth–Yao Sampler</h4>
+            <ul>
+              <li>Developed a Verilog Knuth–Yao discrete sampler core using an LFSR-based RNG.</li>
+              <li>Verified timing, area, and power using Synopsys Design Compiler and VCS.</li>
+              <li>Completed the RTL-to-GDSII flow with placement, routing, and sign-off.</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h4>2.4 GHz RF Front-End (LNA + 4-Path Mixer)</h4>
+            <ul>
+              <li>Designed a common-source inductive degeneration LNA achieving ~18 dB gain and 1.1 dB noise figure.</li>
+              <li>Implemented a 4-path passive mixer with non-overlapping LO phases for low-loss downconversion and harmonic rejection.</li>
+              <li>Validated performance with AC, transient, and noise simulations; evaluated gain, NF, and frequency response.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <a class="action-pill" href="resume.pdf" download>Download Resume</a>
+        <a class="action-pill" href="contact.html">Reach out</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      “Analog is the soul of electronics; it is where real behavior happens.” — Paul R. Gray
+    </footer>
   </div>
-
-  
+  <div class="pixel-transistor" aria-hidden="true">
+    <div class="pixel-chip"></div>
+    <div class="pixel-leg leg-1"></div>
+    <div class="pixel-leg leg-2"></div>
+    <div class="pixel-leg leg-3"></div>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
