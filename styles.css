@@ -216,8 +216,8 @@ a {
 .site-nav a:hover,
 .site-nav a.active {
   transform: translateY(-2px);
-  background: rgba(114, 255, 128, 0.14);
-  border-color: rgba(114, 255, 128, 0.55);
+    background: rgba(255, 111, 142, 0.14);
+    border-color: rgba(255, 111, 142, 0.55);
 }
 
 .page-content {
